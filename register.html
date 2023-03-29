@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styleregister.css" />
+  </head>
+  <body>
+    <div class = "whitebox">
+        <h1>Αίτηση εγγραφής</h1>
+        <p>Παρακαλώ συμπληρώστε τη φόρμα με τα απαραίτητα στοιχεία.</p>
+        <form method="post" action="">
+        <fieldset>
+            <label for="first-name">Όνομα: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Επίθετο: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Συνθηματικό: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,16}" required /></label>
+            <label for="new-password-confirm">Επιβεβαίωση συνθηματικού: <input id="new-password-confirm" name="new-password-confirm" type="password" pattern="[a-z0-5]{8,16}" required /> </label>
+        </fieldset>
+        <fieldset>
+            <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Έχω διαβάσει και αποδέχομαι τους 
+                <a href="">όρους χρήσης και την πολιτική απορρήτου.</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">avi: <input id="profile-picture" type="file" name="file" /></label>
+            <label for="dob">Ημερομηνία γέννησης: <input id="dob" type="date" name="dob" /></label>
+        </fieldset>
+        <fieldset>
+            <label>Έχετε ήδη λογαριασμό; <a href="login.html">Συνδεθείτε</a></label>
+        </fieldset>
+        <input type="submit" value="Υποβολή" />
+        </form>
+    </div>
+    <script src="login_register.js"></script>
+  </body>
+</html>
+    
