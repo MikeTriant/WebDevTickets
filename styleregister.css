@@ -77,6 +77,8 @@ body {
   }
 
   .whitebox{
+    position: relative;
+    top: 10px;
     box-sizing:content-box;
     background: white;
     border-radius: 25px;
