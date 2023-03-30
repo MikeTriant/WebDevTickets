@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styleregister.css" />
+    <link rel="stylesheet" href="navbar.css"/>
+    <script src="navbar.js"></script>
   </head>
   <body>
-    <div class = "whitebox">
-        <h1>Σύνδεση στον λογαριασμό σας.</h1>
-        <form method="post" action="">
-        <fieldset>
-            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
-            <label for="password">Συνθηματικό: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,16}" required /></label>
-        </fieldset>
-        <fieldset>
-            <label>Δεν έχετε λογαριασμό; <a href="register.html">Εγγραφείτε</a></label>
-        </fieldset>
-        <fieldset><label><a href="">Ξεχάσατε τον κωδικό σας;</a></label></fieldset>
-        <input type="submit" value="Σύνδεση" />
-        </form>
+    <div id="main">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="mainpage.html">Αναζήτηση Εισητηρίων</a>
+        <a href="#">Προφίλ</a>
+        <a href="#">Συχνές Ερωτήσεις</a>
+        <a href="login.html">Σύνδεση</a>
+        <a href="register.html">Εγγραφή</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div class = "whitebox">
+          <h1>Σύνδεση στον λογαριασμό σας.</h1>
+          <form method="post" action="">
+          <fieldset>
+              <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+              <label for="password">Συνθηματικό: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,16}" required /></label>
+          </fieldset>
+          <fieldset>
+              <label>Δεν έχετε λογαριασμό; <a href="register.html">Εγγραφείτε</a></label>
+          </fieldset>
+          <fieldset><label><a href="">Ξεχάσατε τον κωδικό σας;</a></label></fieldset>
+          <input type="submit" value="Σύνδεση" />
+          </form>
+      </div>
     </div>
   </body>
 </html>

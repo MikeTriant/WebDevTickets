@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styleregister.css" />
+    <link rel="stylesheet" href="navbar.css"/>
+    <script src="navbar.js"></script>
   </head>
   <body>
-    <div class = "whitebox">
-        <h1>Αίτηση εγγραφής</h1>
-        <p>Παρακαλώ συμπληρώστε τη φόρμα με τα απαραίτητα στοιχεία.</p>
-        <form method="post" action="">
-        <fieldset>
-            <label for="first-name">Όνομα: <input id="first-name" name="first-name" type="text" required /></label>
-            <label for="last-name">Επίθετο: <input id="last-name" name="last-name" type="text" required /></label>
-            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
-            <label for="new-password">Συνθηματικό: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,16}" required /></label>
-            <label for="new-password-confirm">Επιβεβαίωση συνθηματικού: <input id="new-password-confirm" name="new-password-confirm" type="password" pattern="[a-z0-5]{8,16}" required /> </label>
-        </fieldset>
-        <fieldset>
-            <label for="terms-and-conditions">
-            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Έχω διαβάσει και αποδέχομαι τους 
-                <a href="">όρους χρήσης και την πολιτική απορρήτου.</a>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="profile-picture">avi: <input id="profile-picture" type="file" name="file" /></label>
-            <label for="dob">Ημερομηνία γέννησης: <input id="dob" type="date" name="dob" /></label>
-        </fieldset>
-        <fieldset>
-            <label>Έχετε ήδη λογαριασμό; <a href="login.html">Συνδεθείτε</a></label>
-        </fieldset>
-        <input type="submit" value="Υποβολή" />
-        </form>
+    <div id="main">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="mainpage.html">Αναζήτηση Εισητηρίων</a>
+        <a href="#">Προφίλ</a>
+        <a href="#">Συχνές Ερωτήσεις</a>
+        <a href="login.html">Σύνδεση</a>
+        <a href="register.html">Εγγραφή</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div class = "whitebox">
+          <h1>Αίτηση εγγραφής</h1>
+          <p>Παρακαλώ συμπληρώστε τη φόρμα με τα απαραίτητα στοιχεία.</p>
+          <form method="post" action="">
+          <fieldset>
+              <label for="first-name">Όνομα: <input id="first-name" name="first-name" type="text" required /></label>
+              <label for="last-name">Επίθετο: <input id="last-name" name="last-name" type="text" required /></label>
+              <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+              <label for="new-password">Συνθηματικό: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,16}" required /></label>
+              <label for="new-password-confirm">Επιβεβαίωση συνθηματικού: <input id="new-password-confirm" name="new-password-confirm" type="password" pattern="[a-z0-5]{8,16}" required /> </label>
+          </fieldset>
+          <fieldset>
+              <label for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Έχω διαβάσει και αποδέχομαι τους 
+                  <a href="">όρους χρήσης και την πολιτική απορρήτου.</a>
+              </label>
+          </fieldset>
+          <fieldset>
+              <label for="profile-picture">avi: <input id="profile-picture" type="file" name="file" /></label>
+              <label for="dob">Ημερομηνία γέννησης: <input id="dob" type="date" name="dob" /></label>
+          </fieldset>
+          <fieldset>
+              <label>Έχετε ήδη λογαριασμό; <a href="login.html">Συνδεθείτε</a></label>
+          </fieldset>
+          <input type="submit" value="Υποβολή" />
+          </form>
+      </div>
     </div>
     <script src="login_register.js"></script>
   </body>
